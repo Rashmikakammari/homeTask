@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsblog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .upper{
+            background-color: rgba(17, 0, 128, 0.607);
+            padding: 20px;
+        }
+        .in{
+            text-align: center;
+            border: 2px solid;
+            color: black;
+            width: 250px;
+            background-color: white;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+           
+        }
+        .a{
+            margin-left: 30px;
+        }
+        .second{
+            padding: 20px;
+            justify-content: space-between;
+            display: flex;
+        }
+        .content{
+            display: flex;
+            padding: 20px;
+        }
+        .image{
+            width: 300px;
+            height: 200px;
+            background-color: rgba(99, 22, 73, 0.356);
+        }
+        .a button{
+            margin-top: 30px;
+            background-color: rgba(255, 0, 85, 0.918);
+            color: white;
+        }
+        @media screen and (max-width: 576px)
+         {
+          .content{
+            display: flex;
+            flex-direction: column;
+
+          }
+          .content .img{
+            width: 100%;
+          }
+          .second{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+          }
+
+        }
+        @media screen and (max-width: 768px) {
+            .in{
+                position: relative;
+                right: 50%;           
+            }
+            .content .image{
+            width: 100%;
+          }
+          .in{
+            text-align: center;
+            margin-left: 200px;
+          }  
+        }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="upper">
+            <div class="in">
+                <h3>NEWS BLOG</h3>
+                <p>WORLDWIDE NEWS</p>
+            </div>
+        </div>
+
+        
+        <div class="second">
+            <div class="category">
+                <label for="category">SELECT CATEGORY</label><br>
+                <select name="" id="" style="width: 100px;">
+                    <option value="ALL">ALL</option>
+                </select>
+            </div>
+
+            <div class="news">
+                <h1>ALL NEWS</h1>
+            </div>
+            
+            <div class="Subscribe">
+                <label for="">SUBSCRIBE</label><br>
+                <input type="email" placeholder="email address">
+                <input type="button" value="Subscribe" style="background-color: black ; color: white;">
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+    <div class="content">
+        <div class="image"></div>
+        <div class="a">
+            <h1>TITLE 1</h1><br>
+            <p>posted on 20th january, 2023</p><br>
+            <p>Small stocks have lagged behind the equity benchmark Sensex in 2022-23, falling nearly 6 per cent amid a host of negative factors like higher interest rate regime, high inflation and the Russian-Ukraine war. According to market analysts, it was a tumultuous year for the Indian equity market.
+        </p>
+        <button>Continue Reading</button>
+        </div>
+    </div><br>
+    <hr>
+    <div class="content">
+        <div class="image"></div>
+        <div class="a">
+            <h1>TITLE 2</h1><br>
+            <p>posted on 20th january, 2023</p><br>
+            <p>Small stocks have lagged behind the equity benchmark Sensex in 2022-23, falling nearly 6 per cent amid a host of negative factors like higher interest rate regime, high inflation and the Russian-Ukraine war. According to market analysts, it was a tumultuous year for the Indian equity market.
+        </p>
+        <button>Continue Reading</button>
+        </div>
+    </div><br>
+    <hr>
+    <div class="content">
+        <div class="image"></div>
+        <div class="a">
+            <h1>TITLE 3</h1><br>
+            <p>posted on 20th january, 2023</p><br>
+            <p>Small stocks have lagged behind the equity benchmark Sensex in 2022-23, falling nearly 6 per cent amid a host of negative factors like higher interest rate regime, high inflation and the Russian-Ukraine war. According to market analysts, it was a tumultuous year for the Indian equity market.
+        </p>
+        <button>Continue Reading</button>
+        </div>
+    </div><br>
+    <hr>
+</main>
+</body>
+</html>
